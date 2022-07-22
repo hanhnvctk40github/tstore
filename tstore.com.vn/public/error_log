@@ -1,0 +1,771 @@
+[11-May-2022 07:31:55 UTC] PHP Notice:  require(): Read of 3054 bytes failed with errno=12 Cannot allocate memory in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php on line 72
+[14-May-2022 14:58:14 Asia/Ho_Chi_Minh] PHP Fatal error:  During class fetch: Uncaught ErrorException: include(): Read of 883 bytes failed with errno=12 Cannot allocate memory in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/ClassLoader.php:571
+Stack trace:
+#0 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/ClassLoader.php(571): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/ClassLoader.php(571): include()
+#2 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/ClassLoader.php(428): Composer\Autoload\includeFile()
+#3 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/View/Factory.php(15): Composer\Autoload\ClassLoader->loadClass()
+#4 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/ClassLoader.php(571): include('/home/yuuriaoyh...')
+#5 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/ClassLoader.php(428): Composer\Autoload\includeFile()
+#6 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/View/ViewServiceProvider.php(65): Composer\Autoload\ClassLoader->loadClass()
+#7 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/View/ViewServiceProvider.php(42): Illuminate\View\ViewServiceProvider->createFactory()
+#8 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\View\ViewServiceProvider->Illuminate\View\{closure}()
+#9 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#10 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#11 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve()
+#12 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make()
+#13 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Container/Container.php(1419): Illuminate\Foundation\Application->make()
+#14 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(198): Illuminate\Container\Container->offsetGet()
+#15 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(166): Illuminate\Support\Facades\Facade::resolveFacadeInstance()
+#16 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(255): Illuminate\Support\Facades\Facade::getFacadeRoot()
+#17 /home/yuuriaoyhosting/public_html/tstore.com.vn/app/Http/Controllers/BaseController.php(81): Illuminate\Support\Facades\Facade::__callStatic()
+#18 [internal function]: App\Http\Controllers\BaseController->__construct()
+#19 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Container/Container.php(917): ReflectionClass->newInstanceArgs()
+#20 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#21 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#22 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve()
+#23 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make()
+#24 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Routing/Route.php(276): Illuminate\Foundation\Application->make()
+#25 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Routing/Route.php(1069): Illuminate\Routing\Route->getController()
+#26 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Routing/Route.php(1012): Illuminate\Routing\Route->controllerMiddleware()
+#27 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Routing/Router.php(734): Illuminate\Routing\Route->gatherMiddleware()
+#28 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Routing/Router.php(714): Illuminate\Routing\Router->gatherRouteMiddleware()
+#29 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Routing/Router.php(698): Illuminate\Routing\Router->runRouteWithinStack()
+#30 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Routing/Router.php(662): Illuminate\Routing\Router->runRoute()
+#31 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Routing/Router.php(651): Illuminate\Routing\Router->dispatchToRoute()
+#32 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(167): Illuminate\Routing\Router->dispatch()
+#33 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(128): Illuminate\Foundation\Http\Kernel->Illuminate\Foundation\Http\{closure}()
+#34 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#35 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\Foundation\Http\Middleware\TransformsRequest->handle()
+#36 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull->handle()
+#37 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#38 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(40): Illuminate\Foundation\Http\Middleware\TransformsRequest->handle()
+#39 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\Foundation\Http\Middleware\TrimStrings->handle()
+#40 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#41 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\Foundation\Http\Middleware\ValidatePostSize->handle()
+#42 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(86): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#43 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance->handle()
+#44 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/fruitcake/laravel-cors/src/HandleCors.php(38): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#45 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Fruitcake\Cors\HandleCors->handle()
+#46 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php(39): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#47 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\Http\Middleware\TrustProxies->handle()
+#48 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#49 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(142): Illuminate\Pipeline\Pipeline->then()
+#50 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(111): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter()
+#51 /home/yuuriaoyhosting/public_html/tstore.com.vn/public/index.php(51): Illuminate\Foundation\Http\Kernel->handle()
+#52 {main} in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/View/Factory.php on line 15
+[14-May-2022 21:15:44 Asia/Ho_Chi_Minh] PHP Fatal error:  During class fetch: Uncaught ErrorException: include(): Read of 4979 bytes failed with errno=12 Cannot allocate memory in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/ClassLoader.php:571
+Stack trace:
+#0 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/ClassLoader.php(571): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/ClassLoader.php(571): include()
+#2 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/ClassLoader.php(428): Composer\Autoload\includeFile()
+#3 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/View/Factory.php(15): Composer\Autoload\ClassLoader->loadClass()
+#4 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/ClassLoader.php(571): include('/home/yuuriaoyh...')
+#5 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/ClassLoader.php(428): Composer\Autoload\includeFile()
+#6 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/View/ViewServiceProvider.php(65): Composer\Autoload\ClassLoader->loadClass()
+#7 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/View/ViewServiceProvider.php(42): Illuminate\View\ViewServiceProvider->createFactory()
+#8 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\View\ViewServiceProvider->Illuminate\View\{closure}()
+#9 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#10 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#11 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve()
+#12 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make()
+#13 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Container/Container.php(1419): Illuminate\Foundation\Application->make()
+#14 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(198): Illuminate\Container\Container->offsetGet()
+#15 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(166): Illuminate\Support\Facades\Facade::resolveFacadeInstance()
+#16 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(255): Illuminate\Support\Facades\Facade::getFacadeRoot()
+#17 /home/yuuriaoyhosting/public_html/tstore.com.vn/app/Http/Controllers/BaseController.php(81): Illuminate\Support\Facades\Facade::__callStatic()
+#18 [internal function]: App\Http\Controllers\BaseController->__construct()
+#19 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Container/Container.php(917): ReflectionClass->newInstanceArgs()
+#20 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#21 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#22 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve()
+#23 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make()
+#24 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Routing/Route.php(276): Illuminate\Foundation\Application->make()
+#25 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Routing/Route.php(1069): Illuminate\Routing\Route->getController()
+#26 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Routing/Route.php(1012): Illuminate\Routing\Route->controllerMiddleware()
+#27 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Routing/Router.php(734): Illuminate\Routing\Route->gatherMiddleware()
+#28 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Routing/Router.php(714): Illuminate\Routing\Router->gatherRouteMiddleware()
+#29 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Routing/Router.php(698): Illuminate\Routing\Router->runRouteWithinStack()
+#30 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Routing/Router.php(662): Illuminate\Routing\Router->runRoute()
+#31 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Routing/Router.php(651): Illuminate\Routing\Router->dispatchToRoute()
+#32 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(167): Illuminate\Routing\Router->dispatch()
+#33 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(128): Illuminate\Foundation\Http\Kernel->Illuminate\Foundation\Http\{closure}()
+#34 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#35 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\Foundation\Http\Middleware\TransformsRequest->handle()
+#36 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull->handle()
+#37 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#38 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(40): Illuminate\Foundation\Http\Middleware\TransformsRequest->handle()
+#39 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\Foundation\Http\Middleware\TrimStrings->handle()
+#40 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#41 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\Foundation\Http\Middleware\ValidatePostSize->handle()
+#42 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(86): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#43 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance->handle()
+#44 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/fruitcake/laravel-cors/src/HandleCors.php(38): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#45 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Fruitcake\Cors\HandleCors->handle()
+#46 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php(39): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#47 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\Http\Middleware\TrustProxies->handle()
+#48 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#49 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(142): Illuminate\Pipeline\Pipeline->then()
+#50 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(111): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter()
+#51 /home/yuuriaoyhosting/public_html/tstore.com.vn/public/index.php(51): Illuminate\Foundation\Http\Kernel->handle()
+#52 {main} in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/View/Factory.php on line 15
+[16-May-2022 10:34:23 UTC] PHP Notice:  include(): Read of 15774 bytes failed with errno=12 Cannot allocate memory in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/ClassLoader.php on line 571
+[16-May-2022 10:34:23 UTC] PHP Warning:  include(): Failed opening '/home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/../nesbot/carbon/src/Carbon/Traits/Converter.php' for inclusion (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/ClassLoader.php on line 571
+[16-May-2022 10:34:23 UTC] PHP Fatal error:  Trait "Carbon\Traits\Converter" not found in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/nesbot/carbon/src/Carbon/Traits/Date.php on line 527
+[17-May-2022 06:11:02 UTC] PHP Notice:  include(): Read of 3170 bytes failed with errno=12 Cannot allocate memory in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/ClassLoader.php on line 571
+[17-May-2022 06:11:02 UTC] PHP Warning:  include(): Failed opening '/home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/../vlucas/phpdotenv/src/Store/StoreBuilder.php' for inclusion (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/ClassLoader.php on line 571
+[17-May-2022 06:11:02 UTC] PHP Fatal error:  Uncaught ReflectionException: Class "config" does not exist in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Container/Container.php:877
+Stack trace:
+#0 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Container/Container.php(877): ReflectionClass->__construct()
+#1 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#2 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#3 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve()
+#4 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make()
+#5 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Container/Container.php(1419): Illuminate\Foundation\Application->make()
+#6 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(469): Illuminate\Container\Container->offsetGet()
+#7 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(520): Illuminate\Log\LogManager->getDefaultDriver()
+#8 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(112): Illuminate\Log\LogManager->parseDriver()
+#9 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(590): Illuminate\Log\LogManager->driver()
+#10 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(252): Illuminate\Log\LogManager->error()
+#11 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(415): Illuminate\Foundation\Exceptions\Handler->report()
+#12 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(113): Illuminate\Foundation\Http\Kernel->reportException()
+#13 /home/yuuriaoyhosting/public_html/tstore.com.vn/public/index.php(51): Illuminate\Foundation\Http\Kernel->handle()
+#14 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [config] does not exist. in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Container/Container.php:879
+Stack trace:
+#0 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#1 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#2 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve()
+#3 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make()
+#4 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Container/Container.php(1419): Illuminate\Foundation\Application->make()
+#5 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(469): Illuminate\Container\Container->offsetGet()
+#6 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(520): Illuminate\Log\LogManager->getDefaultDriver()
+#7 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(112): Illuminate\Log\LogManager->parseDriver()
+#8 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(590): Illuminate\Log\LogManager->driver()
+#9 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(252): Illuminate\Log\LogManager->error()
+#10 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(415): Illuminate\Foundation\Exceptions\Handler->report()
+#11 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(113): Illuminate\Foundation\Http\Kernel->reportException()
+#12 /home/yuuriaoyhosting/public_html/tstore.com.vn/public/index.php(51): Illuminate\Foundation\Http\Kernel->handle()
+#13 {main}
+  thrown in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 879
+[17-May-2022 06:14:03 UTC] PHP Warning:  include(): Failed opening '/home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/../laravel/framework/src/Illuminate/Foundation/EnvironmentDetector.php' for inclusion (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/ClassLoader.php on line 571
+[19-May-2022 13:07:01 UTC] PHP Fatal error:  Uncaught ReflectionException: Class "App\Exceptions\Handler" does not exist in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Container/Container.php:877
+Stack trace:
+#0 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Container/Container.php(877): ReflectionClass->__construct()
+#1 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#2 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#3 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Container/Container.php(296): Illuminate\Foundation\Application->resolve()
+#4 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#5 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#6 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#7 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve()
+#8 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make()
+#9 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Container/Container.php(1419): Illuminate\Foundation\Application->make()
+#10 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(415): Illuminate\Container\Container->offsetGet()
+#11 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(113): Illuminate\Foundation\Http\Kernel->reportException()
+#12 /home/yuuriaoyhosting/public_html/tstore.com.vn/public/index.php(51): Illuminate\Foundation\Http\Kernel->handle()
+#13 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [App\Exceptions\Handler] does not exist. in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Container/Container.php:879
+Stack trace:
+#0 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#1 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#2 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Container/Container.php(296): Illuminate\Foundation\Application->resolve()
+#3 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#4 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#5 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#6 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve()
+#7 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make()
+#8 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Container/Container.php(1419): Illuminate\Foundation\Application->make()
+#9 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(415): Illuminate\Container\Container->offsetGet()
+#10 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(113): Illuminate\Foundation\Http\Kernel->reportException()
+#11 /home/yuuriaoyhosting/public_html/tstore.com.vn/public/index.php(51): Illuminate\Foundation\Http\Kernel->handle()
+#12 {main}
+  thrown in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 879
+[21-May-2022 02:43:30 UTC] PHP Notice:  require(): Read of 132361 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[21-May-2022 02:43:30 UTC] PHP Notice:  require(): Read of 132361 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[21-May-2022 02:43:30 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_static.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php:31
+Stack trace:
+#0 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/autoload.php(12): ComposerAutoloaderInitd97f268578801852b3a91861557b3693::getLoader()
+#1 /home/yuuriaoyhosting/public_html/tstore.com.vn/public/index.php(34): require('/home/yuuriaoyh...')
+#2 {main}
+  thrown in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[21-May-2022 04:06:17 UTC] PHP Notice:  require(): Read of 103689 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[21-May-2022 04:06:17 UTC] PHP Notice:  require(): Read of 103689 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[21-May-2022 04:06:17 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_static.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php:31
+Stack trace:
+#0 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/autoload.php(12): ComposerAutoloaderInitd97f268578801852b3a91861557b3693::getLoader()
+#1 /home/yuuriaoyhosting/public_html/tstore.com.vn/public/index.php(34): require('/home/yuuriaoyh...')
+#2 {main}
+  thrown in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[21-May-2022 07:32:15 UTC] PHP Notice:  require(): Read of 124169 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[21-May-2022 07:32:15 UTC] PHP Notice:  require(): Read of 120073 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[21-May-2022 07:32:15 UTC] PHP Notice[21-May-2022 08:58:52 UTC] PHP Notice:  require(): Read of 79113 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[21-May-2022 08:58:52 UTC] PHP Notice:  require(): Read of 79113 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[21-May-2022 08:58:52 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_static.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php:31
+Stack trace:
+#0 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/autoload.php(12): ComposerAutoloaderInitd97f268578801852b3a91861557b3693::getLoader()
+#1 /home/yuuriaoyhosting/public_html/tstore.com.vn/public/index.php(34): require('/home/yuuriaoyh...')
+#2 {main}
+  thrown in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[21-May-2022 10:09:39 UTC] PHP Notice:  require(): Read of 62729 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[21-May-2022 10:09:39 UTC] PHP Notice:  require(): Read of 62729 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[21-May-2022 10:09:39 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_static.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php:31
+Stack trace:
+#0 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/autoload.php(12): ComposerAutoloaderInitd97f268578801852b3a91861557b3693::getLoader()
+#1 /home/yuuriaoyhosting/public_html/tstore.com.vn/public/index.php(34): require('/home/yuuriaoyh...')
+#2 {main}
+  thrown in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[21-May-2022 10:47:51 UTC] PHP Notice:  require(): Read of 70921 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[21-May-2022 10:47:51 UTC] PHP Notice:  require(): Read of 70921 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[21-May-2022 10:47:51 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_static.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php:31
+Stack trace:
+#0 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/autoload.php(12): ComposerAutoloaderInitd97f268578801852b3a91861557b3693::getLoader()
+#1 /home/yuuriaoyhosting/public_html/tstore.com.vn/public/index.php(34): require('/home/yuuriaoyh...')
+#2 {main}
+  thrown in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[21-May-2022 12:44:50 UTC] PHP Notice:  require(): Read of 75017 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[21-May-2022 12:44:50 UTC] PHP Notice:  require(): Read of 75017 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[21-May-2022 12:44:50 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_static.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr[21-May-2022 12:54:34 UTC] PHP Notice:  require(): Read of 75017 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[21-May-2022 12:54:34 UTC] PHP Notice:  require(): Read of 75017 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[21-May-2022 12:54:34 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_static.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php:31
+Stack trace:
+#0 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/autoload.php(12): ComposerAutoloaderInitd97f268578801852b3a91861557b3693::getLoader()
+#1 /home/yuuriaoyhosting/public_html/tstore.com.vn/public/index.php(34): require('/home/yuuriaoyh...')
+#2 {main}
+  thrown in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[21-May-2022 13:29:12 UTC] PHP Notice:  require(): Read of 70921 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[21-May-2022 13:29:12 UTC] PHP Notice:  require(): Read of 70921 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[21-May-2022 13:29:12 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_static.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php:31
+Stack trace:
+#0 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/autoload.php(12): ComposerAutoloaderInitd97f268578801852b3a91861557b3693::getLoader()
+#1 /home/yuuriaoyhosting/public_html/tstore.com.vn/public/index.php(34): require('/home/yuuriaoyh...')
+#2 {main}
+  thrown in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[21-May-2022 14:01:04 UTC] PHP Notice:  require(): Read of 75017 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[21-May-2022 14:01:04 UTC] PHP Notice:  require(): Read of 75017 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[21-May-2022 14:01:04 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_static.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php:31
+Stack trace:
+#0 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/autoload.php(12): ComposerAutoloaderInitd97f268578801852b3a91861557b3693::getLoader()
+#1 /home/yuuriaoyhosting/public_html/tstore.com.vn/public/index.php(34): require('/home/yuuriaoyh...')
+#2 {main}
+  thrown in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[21-May-2022 15:39:47 UTC] PHP Notice:  require(): Read of 79113 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[21-May-2022 15:39:47 UTC] PHP Notice:  require(): Read of 79113 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[21-May-2022 15:39:47 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_static.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr[21-May-2022 15:54:52 UTC] PHP Notice:  require(): Read of 83209 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[21-May-2022 15:54:52 UTC] PHP Notice:  require(): Read of 83209 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[21-May-2022 15:54:52 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_static.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php:31
+Stack trace:
+#0 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/autoload.php(12): ComposerAutoloaderInitd97f268578801852b3a91861557b3693::getLoader()
+#1 /home/yuuriaoyhosting/public_html/tstore.com.vn/public/index.php(34): require('/home/yuuriaoyh...')
+#2 {main}
+  thrown in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[21-May-2022 18:38:42 UTC] PHP Notice:  require(): Read of 34057 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[21-May-2022 18:38:42 UTC] PHP Notice:  require(): Read of 34057 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[21-May-2022 18:38:42 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_static.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php:31
+Stack trace:
+#0 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/autoload.php(12): ComposerAutoloaderInitd97f268578801852b3a91861557b3693::getLoader()
+#1 /home/yuuriaoyhosting/public_html/tstore.com.vn/public/index.php(34): require('/home/yuuriaoyh...')
+#2 {main}
+  thrown in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[21-May-2022 22:20:00 UTC] PHP Notice:  require(): Read of 25865 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[21-May-2022 22:20:00 UTC] PHP Notice:  require(): Read of 25865 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[21-May-2022 22:20:00 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_static.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php:31
+Stack trace:
+#0 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/autoload.php(12): ComposerAutoloaderInitd97f268578801852b3a91861557b3693::getLoader()
+#1 /home/yuuriaoyhosting/public_html/tstore.com.vn/public/index.php(34): require('/home/yuuriaoyh...')
+#2 {main}
+  thrown in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[21-May-2022 23:17:24 UTC] PHP Notice:  require(): Read of 17673 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[21-May-2022 23:17:24 UTC] PHP Notice:  require(): Read of 17673 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[21-May-2022 23:17:24 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_static.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr[22-May-2022 00:01:28 UTC] PHP Notice:  require(): Read of 9481 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[22-May-2022 00:01:28 UTC] PHP Notice:  require(): Read of 9481 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[22-May-2022 00:01:28 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_static.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php:31
+Stack trace:
+#0 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/autoload.php(12): ComposerAutoloaderInitd97f268578801852b3a91861557b3693::getLoader()
+#1 /home/yuuriaoyhosting/public_html/tstore.com.vn/public/index.php(34): require('/home/yuuriaoyh...')
+#2 {main}
+  thrown in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[22-May-2022 06:45:15 UTC] PHP Notice:  require(): Read of 29961 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[22-May-2022 06:45:15 UTC] PHP Notice:  require(): Read of 29961 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[22-May-2022 06:45:15 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_static.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php:31
+Stack trace:
+#0 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/autoload.php(12): ComposerAutoloaderInitd97f268578801852b3a91861557b3693::getLoader()
+#1 /home/yuuriaoyhosting/public_html/tstore.com.vn/public/index.php(34): require('/home/yuuriaoyh...')
+#2 {main}
+  thrown in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[22-May-2022 15:16:40 UTC] PHP Notice:  require(): Read of 21769 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[22-May-2022 15:16:40 UTC] PHP Notice:  require(): Read of 21769 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[22-May-2022 15:16:40 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_static.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php:31
+Stack trace:
+#0 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/autoload.php(12): ComposerAutoloaderInitd97f268578801852b3a91861557b3693::getLoader()
+#1 /home/yuuriaoyhosting/public_html/tstore.com.vn/public/index.php(34): require('/home/yuuriaoyh...')
+#2 {main}
+  thrown in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[22-May-2022 17:26:19 UTC] PHP Notice:  require(): Read of 1289 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[22-May-2022 22:46:37 UTC] PHP Notice:  require(): Read of 689417 bytes failed with errno=12 Cannot allocate memory in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[22-May-2022 22:46:37 UTC] PHP Notice:  require(): Read of 673033 bytes failed with errno=12 Cannot allocate memory in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[22-May-2022 22:46:37 UTC] PHP Notice:  requir[23-May-2022 06:02:35 UTC] PHP Notice:  require(): Read of 21769 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[23-May-2022 06:02:35 UTC] PHP Notice:  require(): Read of 21769 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[23-May-2022 06:02:35 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_static.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php:31
+Stack trace:
+#0 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/autoload.php(12): ComposerAutoloaderInitd97f268578801852b3a91861557b3693::getLoader()
+#1 /home/yuuriaoyhosting/public_html/tstore.com.vn/public/index.php(34): require('/home/yuuriaoyh...')
+#2 {main}
+  thrown in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[23-May-2022 07:12:08 UTC] PHP Notice:  require(): Read of 34057 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[23-May-2022 07:12:08 UTC] PHP Notice:  require(): Read of 34057 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[23-May-2022 07:12:08 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_static.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php:31
+Stack trace:
+#0 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/autoload.php(12): ComposerAutoloaderInitd97f268578801852b3a91861557b3693::getLoader()
+#1 /home/yuuriaoyhosting/public_html/tstore.com.vn/public/index.php(34): require('/home/yuuriaoyh...')
+#2 {main}
+  thrown in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[23-May-2022 07:25:48 UTC] PHP Notice:  require(): Read of 9481 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[23-May-2022 07:25:48 UTC] PHP Notice:  require(): Read of 9481 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[23-May-2022 07:25:48 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_static.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php:31
+Stack trace:
+#0 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/autoload.php(12): ComposerAutoloaderInitd97f268578801852b3a91861557b3693::getLoader()
+#1 /home/yuuriaoyhosting/public_html/tstore.com.vn/public/index.php(34): require('/home/yuuriaoyh...')
+#2 {main}
+  thrown in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[23-May-2022 09:21:59 UTC] PHP Notice:  require(): Read of 9481 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[23-May-2022 09:21:59 UTC] PHP Notice:  require(): Read of 9481 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[23-May-2022 09:21:59 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_static.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/sha[23-May-2022 10:51:05 UTC] PHP Notice:  require(): Read of 17673 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[23-May-2022 10:51:05 UTC] PHP Notice:  require(): Read of 17673 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[23-May-2022 10:51:05 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_static.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php:31
+Stack trace:
+#0 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/autoload.php(12): ComposerAutoloaderInitd97f268578801852b3a91861557b3693::getLoader()
+#1 /home/yuuriaoyhosting/public_html/tstore.com.vn/public/index.php(34): require('/home/yuuriaoyh...')
+#2 {main}
+  thrown in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[23-May-2022 11:12:33 UTC] PHP Notice:  require(): Read of 21769 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[23-May-2022 11:12:33 UTC] PHP Notice:  require(): Read of 21769 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[23-May-2022 11:12:33 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_static.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php:31
+Stack trace:
+#0 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/autoload.php(12): ComposerAutoloaderInitd97f268578801852b3a91861557b3693::getLoader()
+#1 /home/yuuriaoyhosting/public_html/tstore.com.vn/public/index.php(34): require('/home/yuuriaoyh...')
+#2 {main}
+  thrown in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[23-May-2022 11:34:42 UTC] PHP Notice:  require(): Read of 21769 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[23-May-2022 11:34:42 UTC] PHP Notice:  require(): Read of 21769 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[23-May-2022 11:34:42 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_static.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php:31
+Stack trace:
+#0 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/autoload.php(12): ComposerAutoloaderInitd97f268578801852b3a91861557b3693::getLoader()
+#1 /home/yuuriaoyhosting/public_html/tstore.com.vn/public/index.php(34): require('/home/yuuriaoyh...')
+#2 {main}
+  thrown in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[23-May-2022 11:37:42 UTC] PHP Notice:  require(): Read of 21769 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[23-May-2022 11:37:42 UTC] PHP Notice:  require(): Read of 21769 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[23-May-2022 11:37:42 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_static.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr[23-May-2022 11:39:22 UTC] PHP Notice:  require(): Read of 21769 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[23-May-2022 11:39:22 UTC] PHP Notice:  require(): Read of 21769 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[23-May-2022 11:39:22 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_static.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php:31
+Stack trace:
+#0 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/autoload.php(12): ComposerAutoloaderInitd97f268578801852b3a91861557b3693::getLoader()
+#1 /home/yuuriaoyhosting/public_html/tstore.com.vn/public/index.php(34): require('/home/yuuriaoyh...')
+#2 {main}
+  thrown in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[23-May-2022 11:40:04 UTC] PHP Notice:  require(): Read of 25865 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[23-May-2022 11:40:04 UTC] PHP Notice:  require(): Read of 25865 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[23-May-2022 11:40:04 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_static.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php:31
+Stack trace:
+#0 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/autoload.php(12): ComposerAutoloaderInitd97f268578801852b3a91861557b3693::getLoader()
+#1 /home/yuuriaoyhosting/public_html/tstore.com.vn/public/index.php(34): require('/home/yuuriaoyh...')
+#2 {main}
+  thrown in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[23-May-2022 13:12:33 UTC] PHP Notice:  require(): Read of 17673 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[23-May-2022 13:12:33 UTC] PHP Notice:  require(): Read of 13577 bytes failed with errno=12 Cannot allocate memory in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[23-May-2022 13:12:33 UTC] PHP Notice:  require(): Read of 13577 bytes failed with errno=12 Cannot allocate memory in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[23-May-2022 13:12:33 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_static.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php:31
+Stack trace:
+#0 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/autoload.php(12): ComposerAutoloaderInitd97f268578801852b3a91861557b3693::getLoader()
+#1 /home/yuuriaoyhosting/public_html/tstore.com.vn/public/index.php(34): require('/home/yuuriaoyh...')
+#2 {main}
+  thrown in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[23-May-2022 13:41:28 UTC] PHP Notice:  require(): Read of 29961 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[23-May-2022 13:41:28 UTC] PHP Notice:  require(): Read of 29961 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[23-May-2022 13:41:28 UTC] PHP Fatal error:  [23-May-2022 13:42:19 UTC] PHP Notice:  require(): Read of 29961 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[23-May-2022 13:42:19 UTC] PHP Notice:  require(): Read of 29961 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[23-May-2022 13:42:19 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_static.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php:31
+Stack trace:
+#0 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/autoload.php(12): ComposerAutoloaderInitd97f268578801852b3a91861557b3693::getLoader()
+#1 /home/yuuriaoyhosting/public_html/tstore.com.vn/public/index.php(34): require('/home/yuuriaoyh...')
+#2 {main}
+  thrown in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[23-May-2022 14:02:36 UTC] PHP Notice:  require(): Read of 34057 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[23-May-2022 14:02:36 UTC] PHP Notice:  require(): Read of 34057 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[23-May-2022 14:02:36 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_static.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php:31
+Stack trace:
+#0 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/autoload.php(12): ComposerAutoloaderInitd97f268578801852b3a91861557b3693::getLoader()
+#1 /home/yuuriaoyhosting/public_html/tstore.com.vn/public/index.php(34): require('/home/yuuriaoyh...')
+#2 {main}
+  thrown in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[23-May-2022 16:31:18 UTC] PHP Notice:  require(): Read of 17673 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[23-May-2022 16:31:18 UTC] PHP Notice:  require(): Read of 17673 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[23-May-2022 16:31:18 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_static.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php:31
+Stack trace:
+#0 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/autoload.php(12): ComposerAutoloaderInitd97f268578801852b3a91861557b3693::getLoader()
+#1 /home/yuuriaoyhosting/public_html/tstore.com.vn/public/index.php(34): require('/home/yuuriaoyh...')
+#2 {main}
+  thrown in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[23-May-2022 17:22:28 UTC] PHP Notice:  require(): Read of 62729 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[23-May-2022 17:22:28 UTC] PHP Notice:  require(): Read of 62729 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[23-May-2022 17:22:28 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_static.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr[23-May-2022 22:22:13 UTC] PHP Notice:  require(): Read of 83209 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[23-May-2022 22:22:13 UTC] PHP Notice:  require(): Read of 83209 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[23-May-2022 22:22:13 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_static.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php:31
+Stack trace:
+#0 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/autoload.php(12): ComposerAutoloaderInitd97f268578801852b3a91861557b3693::getLoader()
+#1 /home/yuuriaoyhosting/public_html/tstore.com.vn/public/index.php(34): require('/home/yuuriaoyh...')
+#2 {main}
+  thrown in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[23-May-2022 23:40:19 UTC] PHP Notice:  require(): Read of 95497 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[23-May-2022 23:40:19 UTC] PHP Notice:  require(): Read of 95497 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[23-May-2022 23:40:19 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_static.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php:31
+Stack trace:
+#0 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/autoload.php(12): ComposerAutoloaderInitd97f268578801852b3a91861557b3693::getLoader()
+#1 /home/yuuriaoyhosting/public_html/tstore.com.vn/public/index.php(34): require('/home/yuuriaoyh...')
+#2 {main}
+  thrown in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[23-May-2022 23:49:22 UTC] PHP Notice:  require(): Read of 103689 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[23-May-2022 23:49:22 UTC] PHP Notice:  require(): Read of 103689 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[23-May-2022 23:49:22 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_static.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php:31
+Stack trace:
+#0 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/autoload.php(12): ComposerAutoloaderInitd97f268578801852b3a91861557b3693::getLoader()
+#1 /home/yuuriaoyhosting/public_html/tstore.com.vn/public/index.php(34): require('/home/yuuriaoyh...')
+#2 {main}
+  thrown in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[23-May-2022 23:50:16 UTC] PHP Notice:  require(): Read of 95497 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[23-May-2022 23:50:16 UTC] PHP Notice:  require(): Read of 95497 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[23-May-2022 23:50:16 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_static.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/u[23-May-2022 23:52:34 UTC] PHP Notice:  require(): Read of 95497 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[23-May-2022 23:52:34 UTC] PHP Notice:  require(): Read of 95497 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[23-May-2022 23:52:34 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_static.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php:31
+Stack trace:
+#0 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/autoload.php(12): ComposerAutoloaderInitd97f268578801852b3a91861557b3693::getLoader()
+#1 /home/yuuriaoyhosting/public_html/tstore.com.vn/public/index.php(34): require('/home/yuuriaoyh...')
+#2 {main}
+  thrown in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[24-May-2022 00:01:02 UTC] PHP Notice:  require(): Read of 75017 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[24-May-2022 00:01:02 UTC] PHP Notice:  require(): Read of 75017 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[24-May-2022 00:01:02 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_static.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php:31
+Stack trace:
+#0 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/autoload.php(12): ComposerAutoloaderInitd97f268578801852b3a91861557b3693::getLoader()
+#1 /home/yuuriaoyhosting/public_html/tstore.com.vn/public/index.php(34): require('/home/yuuriaoyh...')
+#2 {main}
+  thrown in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[01-Jun-2022 05:08:02 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/autoload.php:10
+Stack trace:
+#0 /home/yuuriaoyhosting/public_html/tstore.com.vn/public/index.php(34): require()
+#1 {main}
+  thrown in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/autoload.php on line 10
+[03-Jun-2022 01:49:02 UTC] PHP Notice:  include(): Read of 457 bytes failed with errno=12 Cannot allocate memory in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/ClassLoader.php on line 571
+[03-Jun-2022 01:49:02 UTC] PHP Warning:  include(): Failed opening '/home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/../vlucas/phpdotenv/src/Loader/LoaderInterface.php' for inclusion (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/ClassLoader.php on line 571
+[03-Jun-2022 01:49:02 UTC] PHP Fatal error:  Uncaught ReflectionException: Class "config" does not exist in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Container/Container.php:877
+Stack trace:
+#0 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Container/Container.php(877): ReflectionClass->__construct()
+#1 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#2 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#3 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve()
+#4 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make()
+#5 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Container/Container.php(1419): Illuminate\Foundation\Application->make()
+#6 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(469): Illuminate\Container\Container->offsetGet()
+#7 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(520): Illuminate\Log\LogManager->getDefaultDriver()
+#8 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(112): Illuminate\Log\LogManager->parseDriver()
+#9 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(590): Illuminate\Log\LogManager->driver()
+#10 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(252): Illuminate\Log\LogManager->error()
+#11 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(415): Illuminate\Foundation\Exceptions\Handler->report()
+#12 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(113): Illuminate\Foundation\Http\Kernel->reportException()
+#13 /home/yuuriaoyhosting/public_html/tstore.com.vn/public/index.php(51): Illuminate\Foundation\Http\Kernel->handle()
+#14 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [config] does not exist. in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Container/Container.php:879
+Stack trace:
+#0 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build()
+#1 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve()
+#2 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve()
+#3 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make()
+#4 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Container/Container.php(1419): Illuminate\Foundation\Application->make()
+#5 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(469): Illuminate\Container\Container->offsetGet()
+#6 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(520): Illuminate\Log\LogManager->getDefaultDriver()
+#7 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(112): Illuminate\Log\LogManager->parseDriver()
+#8 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(590): Illuminate\Log\LogManager->driver()
+#9 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(252): Illuminate\Log\LogManager->error()
+#10 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(415): Illuminate\Foundation\Exceptions\Handler->report()
+#11 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(113): Illuminate\Foundation\Http\Kernel->reportException()
+#12 /home/yuuriaoyhosting/public_html/tstore.com.vn/public/index.php(51): Illuminate\Foundation\Http\Kernel->handle()
+#13 {main}
+  thrown in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 879
+[20-Jun-2022 00:49:50 UTC] PHP Notice:  require(): Read of 713993 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[20-Jun-2022 00:49:50 UTC] PHP Notice:  require(): Read of 713993 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[20-Jun-2022 00:49:50 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_static.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php:31
+Stack trace:
+#0 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/autoload.php(12): ComposerAutoloaderInitd97f268578801852b3a91861557b3693::getLoader()
+#1 /home/yuuriaoyhosting/public_html/tstore.com.vn/public/index.php(34): require('/home/yuuriaoyh...')
+#2 {main}
+  thrown in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[20-Jun-2022 01:18:52 UTC] PHP Notice:  require(): Read of 693513 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[20-Jun-2022 01:18:52 UTC] PHP Notice:  require(): Read of 693513 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[20-Jun-2022 01:18:52 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_static.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php:31
+Stack trace:
+#0 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/autoload.php(12): ComposerAutoloaderInitd97f268578801852b3a91861557b3693::getLoader()
+#1 /home/yuuriaoyhosting/public_html/tstore.com.vn/public/index.php(34): require('/home/yuuriaoyh...')
+#2 {main}
+  thrown in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[20-Jun-2022 07:17:33 UTC] PHP Notice:  require(): Read of 627977 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[20-Jun-2022 07:17:33 UTC] PHP Notice:  require(): Read of 627977 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[20-Jun-2022 07:17:33 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_static.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php:31
+Stack trace:
+#0 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/autoload.php(12): ComposerAutoloaderInitd97f268578801852b3a91861557b3693::getLoader()
+#1 /home/yuuriaoyhosting/public_html/tstore.com.vn/public/index.php(34): require('/home/yuuriaoyh...')
+#2 {main}
+  thrown in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[20-Jun-2022 10:16:57 UTC] PHP Notice:  require(): Read of 632073 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[20-Jun-2022 10:16:57 UTC] PHP Notice:  require(): Read of 632073 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[20-Jun-2022 10:16:57 UTC] PHP Fatal error:  [20-Jun-2022 20:43:34 UTC] PHP Notice:  require(): Read of 746761 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[20-Jun-2022 20:43:34 UTC] PHP Notice:  require(): Read of 746761 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[20-Jun-2022 20:43:34 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_static.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php:31
+Stack trace:
+#0 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/autoload.php(12): ComposerAutoloaderInitd97f268578801852b3a91861557b3693::getLoader()
+#1 /home/yuuriaoyhosting/public_html/tstore.com.vn/public/index.php(34): require('/home/yuuriaoyh...')
+#2 {main}
+  thrown in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[24-Jun-2022 06:23:31 UTC] PHP Notice:  require(): Read of 779529 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[24-Jun-2022 06:23:31 UTC] PHP Notice:  require(): Read of 779529 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[24-Jun-2022 06:23:31 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_static.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php:31
+Stack trace:
+#0 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/autoload.php(12): ComposerAutoloaderInitd97f268578801852b3a91861557b3693::getLoader()
+#1 /home/yuuriaoyhosting/public_html/tstore.com.vn/public/index.php(34): require('/home/yuuriaoyh...')
+#2 {main}
+  thrown in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[24-Jun-2022 11:23:35 UTC] PHP Notice:  require(): Read of 558345 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[24-Jun-2022 11:23:35 UTC] PHP Notice:  require(): Read of 558345 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[24-Jun-2022 11:23:35 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_static.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php:31
+Stack trace:
+#0 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/autoload.php(12): ComposerAutoloaderInitd97f268578801852b3a91861557b3693::getLoader()
+#1 /home/yuuriaoyhosting/public_html/tstore.com.vn/public/index.php(34): require('/home/yuuriaoyh...')
+#2 {main}
+  thrown in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[24-Jun-2022 14:40:13 UTC] PHP Notice:  require(): Read of 636169 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[24-Jun-2022 14:40:13 UTC] PHP Notice:  require(): Read of 636169 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[24-Jun-2022 14:40:13 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_static.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/p[24-Jun-2022 14:55:40 UTC] PHP Notice:  require(): Read of 648457 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[24-Jun-2022 14:55:40 UTC] PHP Notice:  require(): Read of 648457 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[24-Jun-2022 14:55:40 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_static.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php:31
+Stack trace:
+#0 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/autoload.php(12): ComposerAutoloaderInitd97f268578801852b3a91861557b3693::getLoader()
+#1 /home/yuuriaoyhosting/public_html/tstore.com.vn/public/index.php(34): require('/home/yuuriaoyh...')
+#2 {main}
+  thrown in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[24-Jun-2022 17:04:29 UTC] PHP Notice:  require(): Read of 632073 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[24-Jun-2022 17:04:29 UTC] PHP Notice:  require(): Read of 632073 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[24-Jun-2022 17:04:29 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_static.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php:31
+Stack trace:
+#0 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/autoload.php(12): ComposerAutoloaderInitd97f268578801852b3a91861557b3693::getLoader()
+#1 /home/yuuriaoyhosting/public_html/tstore.com.vn/public/index.php(34): require('/home/yuuriaoyh...')
+#2 {main}
+  thrown in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[24-Jun-2022 17:19:15 UTC] PHP Notice:  require(): Read of 636169 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[24-Jun-2022 17:19:15 UTC] PHP Notice:  require(): Read of 636169 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[24-Jun-2022 17:19:15 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_static.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php:31
+Stack trace:
+#0 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/autoload.php(12): ComposerAutoloaderInitd97f268578801852b3a91861557b3693::getLoader()
+#1 /home/yuuriaoyhosting/public_html/tstore.com.vn/public/index.php(34): require('/home/yuuriaoyh...')
+#2 {main}
+  thrown in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[24-Jun-2022 20:00:51 UTC] PHP Notice:  require(): Read of 644361 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[24-Jun-2022 20:00:51 UTC] PHP Notice:  require(): Read of 644361 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[24-Jun-2022 20:00:51 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_static.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/p[24-Jun-2022 20:45:51 UTC] PHP Notice:  require(): Read of 644361 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[24-Jun-2022 20:45:51 UTC] PHP Notice:  require(): Read of 644361 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[24-Jun-2022 20:45:51 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_static.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php:31
+Stack trace:
+#0 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/autoload.php(12): ComposerAutoloaderInitd97f268578801852b3a91861557b3693::getLoader()
+#1 /home/yuuriaoyhosting/public_html/tstore.com.vn/public/index.php(34): require('/home/yuuriaoyh...')
+#2 {main}
+  thrown in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[25-Jun-2022 03:04:25 UTC] PHP Notice:  require(): Read of 636169 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[25-Jun-2022 03:04:25 UTC] PHP Notice:  require(): Read of 636169 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[25-Jun-2022 03:04:25 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_static.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php:31
+Stack trace:
+#0 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/autoload.php(12): ComposerAutoloaderInitd97f268578801852b3a91861557b3693::getLoader()
+#1 /home/yuuriaoyhosting/public_html/tstore.com.vn/public/index.php(34): require('/home/yuuriaoyh...')
+#2 {main}
+  thrown in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[25-Jun-2022 04:52:39 UTC] PHP Notice:  require(): Read of 599305 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[25-Jun-2022 04:52:39 UTC] PHP Notice:  require(): Read of 599305 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[25-Jun-2022 04:52:39 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_static.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php:31
+Stack trace:
+#0 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/autoload.php(12): ComposerAutoloaderInitd97f268578801852b3a91861557b3693::getLoader()
+#1 /home/yuuriaoyhosting/public_html/tstore.com.vn/public/index.php(34): require('/home/yuuriaoyh...')
+#2 {main}
+  thrown in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[25-Jun-2022 09:34:48 UTC] PHP Notice:  require(): Read of 611593 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[25-Jun-2022 09:34:48 UTC] PHP Notice:  require(): Read of 611593 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[25-Jun-2022 09:34:48 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_static.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/p[25-Jun-2022 12:55:38 UTC] PHP Notice:  require(): Read of 578825 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[25-Jun-2022 12:55:38 UTC] PHP Notice:  require(): Read of 578825 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[25-Jun-2022 12:55:38 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_static.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php:31
+Stack trace:
+#0 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/autoload.php(12): ComposerAutoloaderInitd97f268578801852b3a91861557b3693::getLoader()
+#1 /home/yuuriaoyhosting/public_html/tstore.com.vn/public/index.php(34): require('/home/yuuriaoyh...')
+#2 {main}
+  thrown in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[25-Jun-2022 13:24:55 UTC] PHP Notice:  require(): Read of 595209 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[25-Jun-2022 13:24:55 UTC] PHP Notice:  require(): Read of 595209 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[25-Jun-2022 13:24:55 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_static.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php:31
+Stack trace:
+#0 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/autoload.php(12): ComposerAutoloaderInitd97f268578801852b3a91861557b3693::getLoader()
+#1 /home/yuuriaoyhosting/public_html/tstore.com.vn/public/index.php(34): require('/home/yuuriaoyh...')
+#2 {main}
+  thrown in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[25-Jun-2022 14:13:48 UTC] PHP Notice:  require(): Read of 582921 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[25-Jun-2022 14:13:48 UTC] PHP Notice:  require(): Read of 582921 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[25-Jun-2022 14:13:48 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_static.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php:31
+Stack trace:
+#0 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/autoload.php(12): ComposerAutoloaderInitd97f268578801852b3a91861557b3693::getLoader()
+#1 /home/yuuriaoyhosting/public_html/tstore.com.vn/public/index.php(34): require('/home/yuuriaoyh...')
+#2 {main}
+  thrown in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[25-Jun-2022 16:26:57 UTC] PHP Notice:  require(): Read of 603401 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[25-Jun-2022 16:26:57 UTC] PHP Notice:  require(): Read of 603401 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[25-Jun-2022 16:26:57 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_static.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php:31
+Stack trace:
+#0 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/autoload.php(12): ComposerAutoloaderInitd97f268578801852b3a91861557b3693::getLoader()
+#1 /home/yuuriaoyhosting/public_html/tstore.com.vn/public/index.php(34): require('/home/yuuriaoyh...')
+#2 {main}
+  thrown in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[25-Jun-2022 16:43:18 UTC] PHP Notice:  require(): Read of 591113 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[25-Jun-2022 16:43:18 UTC] PHP Notice:  require(): Read of 591113 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[25-Jun-2022 16:43:18 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_static.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php:31
+Stack trace:
+#0 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/autoload.php(12): ComposerAutoloaderInitd97f268578801852b3a91861557b3693::getLoader()
+#1 /home/yuuriaoyhosting/public_html/tstore.com.vn/public/index.php(34): require('/home/yuuriaoyh...')
+#2 {main}
+  thrown in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[25-Jun-2022 17:15:36 UTC] PHP Notice:  require(): Read of 566537 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[25-Jun-2022 17:15:36 UTC] PHP Notice:  require(): Read of 566537 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[25-Jun-2022 17:15:36 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_static.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php:31
+Stack trace:
+#0 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/autoload.php(12): ComposerAutoloaderInitd97f268578801852b3a91861557b3693::getLoader()
+#1 /home/yuuriaoyhosting/public_html/tstore.com.vn/public/index.php(34): require('/home/yuuriaoyh...')
+#2 {main}
+  thrown in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[25-Jun-2022 18:19:09 UTC] PHP Notice:  require(): Read of 578825 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[25-Jun-2022 18:19:09 UTC] PHP Notice:  require(): Read of 578825 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[25-Jun-2022 18:19:09 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_static.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php:31
+Stack trace:
+#0 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/autoload.php(12): ComposerAutoloaderInitd97f268578801852b3a91861557b3693::getLoader()
+#1 /home/yuuriaoyhosting/public_html/tstore.com.vn/public/index.php(34): require('/home/yuuriaoyh...')
+#2 {main}
+  thrown in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[25-Jun-2022 18:37:56 UTC] PHP Notice:  require(): Read of 587017 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[25-Jun-2022 18:37:56 UTC] PHP Notice:  require(): Read of 587017 bytes failed with errno=12 Cannot allocate memory in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[25-Jun-2022 18:37:56 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_static.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php:31
+Stack trace:
+#0 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/autoload.php(12): ComposerAutoloaderInitd97f268578801852b3a91861557b3693::getLoader()
+#1 /home/yuuriaoyhosting/public_html/tstore.com.vn/public/index.php(34): require('/home/yuuriaoyh...')
+#2 {main}
+  thrown in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[26-Jun-2022 03:44:46 UTC] PHP Notice:  require(): Read of 611593 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[26-Jun-2022 03:44:46 UTC] PHP Notice:  require(): Read of 611593 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[26-Jun-2022 03:44:46 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_static.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php:31
+Stack trace:
+#0 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/autoload.php(12): ComposerAutoloaderInitd97f268578801852b3a91861557b3693::getLoader()
+#1 /home/yuuriaoyhosting/public_html/tstore.com.vn/public/index.php(34): require('/home/yuuriaoyh...')
+#2 {main}
+  thrown in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[26-Jun-2022 06:31:15 UTC] PHP Notice:  require(): Read of 550153 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[26-Jun-2022 06:31:15 UTC] PHP Notice:  require(): Read of 550153 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[26-Jun-2022 06:31:15 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_static.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php:31
+Stack trace:
+#0 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/autoload.php(12): ComposerAutoloaderInitd97f268578801852b3a91861557b3693::getLoader()
+#1 /home/yuuriaoyhosting/public_html/tstore.com.vn/public/index.php(34): require('/home/yuuriaoyh...')
+#2 {main}
+  thrown in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[26-Jun-2022 07:25:58 UTC] PHP Notice:  require(): Read of 578825 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[26-Jun-2022 07:25:58 UTC] PHP Notice:  require(): Read of 578825 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[26-Jun-2022 07:25:58 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_static.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php:31
+Stack trace:
+#0 /home/yuuriaoyhosting/public_html/tstore.[26-Jun-2022 08:40:54 UTC] PHP Notice:  require(): Read of 570633 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[26-Jun-2022 08:40:54 UTC] PHP Notice:  require(): Read of 570633 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[26-Jun-2022 08:40:54 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_static.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php:31
+Stack trace:
+#0 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/autoload.php(12): ComposerAutoloaderInitd97f268578801852b3a91861557b3693::getLoader()
+#1 /home/yuuriaoyhosting/public_html/tstore.com.vn/public/index.php(34): require('/home/yuuriaoyh...')
+#2 {main}
+  thrown in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[26-Jun-2022 08:48:19 UTC] PHP Notice:  require(): Read of 574729 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[26-Jun-2022 08:48:19 UTC] PHP Notice:  require(): Read of 574729 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[26-Jun-2022 08:48:19 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_static.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php:31
+Stack trace:
+#0 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/autoload.php(12): ComposerAutoloaderInitd97f268578801852b3a91861557b3693::getLoader()
+#1 /home/yuuriaoyhosting/public_html/tstore.com.vn/public/index.php(34): require('/home/yuuriaoyh...')
+#2 {main}
+  thrown in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[26-Jun-2022 13:12:34 UTC] PHP Notice:  require(): Read of 611593 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[26-Jun-2022 13:12:34 UTC] PHP Notice:  require(): Read of 611593 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[26-Jun-2022 13:12:34 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_static.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php:31
+Stack trace:
+#0 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/autoload.php(12): ComposerAutoloaderInitd97f268578801852b3a91861557b3693::getLoader()
+#1 /home/yuuriaoyhosting/public_html/tstore.com.vn/public/index.php(34): require('/home/yuuriaoyh...')
+#2 {main}
+  thrown in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[26-Jun-2022 15:26:19 UTC] PHP Notice:  require(): Read of 574729 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[26-Jun-2022 15:26:19 UTC] PHP Notice:  require(): Read of 574729 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[26-Jun-2022 15:26:19 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_static.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/p[26-Jun-2022 16:20:28 UTC] PHP Notice:  require(): Read of 607497 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[26-Jun-2022 16:20:28 UTC] PHP Notice:  require(): Read of 607497 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[26-Jun-2022 16:20:28 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_static.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php:31
+Stack trace:
+#0 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/autoload.php(12): ComposerAutoloaderInitd97f268578801852b3a91861557b3693::getLoader()
+#1 /home/yuuriaoyhosting/public_html/tstore.com.vn/public/index.php(34): require('/home/yuuriaoyh...')
+#2 {main}
+  thrown in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[26-Jun-2022 18:52:39 UTC] PHP Notice:  require(): Read of 574729 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[26-Jun-2022 18:52:39 UTC] PHP Notice:  require(): Read of 574729 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[26-Jun-2022 18:52:39 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_static.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php:31
+Stack trace:
+#0 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/autoload.php(12): ComposerAutoloaderInitd97f268578801852b3a91861557b3693::getLoader()
+#1 /home/yuuriaoyhosting/public_html/tstore.com.vn/public/index.php(34): require('/home/yuuriaoyh...')
+#2 {main}
+  thrown in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[26-Jun-2022 19:16:25 UTC] PHP Notice:  require(): Read of 607497 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[26-Jun-2022 19:16:25 UTC] PHP Notice:  require(): Read of 607497 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[26-Jun-2022 19:16:25 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_static.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php:31
+Stack trace:
+#0 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/autoload.php(12): ComposerAutoloaderInitd97f268578801852b3a91861557b3693::getLoader()
+#1 /home/yuuriaoyhosting/public_html/tstore.com.vn/public/index.php(34): require('/home/yuuriaoyh...')
+#2 {main}
+  thrown in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[26-Jun-2022 20:02:07 UTC] PHP Notice:  require(): Read of 574729 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[26-Jun-2022 20:02:07 UTC] PHP Notice:  require(): Read of 574729 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[26-Jun-2022 20:02:07 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_static.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/p[26-Jun-2022 21:44:28 UTC] PHP Notice:  require(): Read of 599305 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[26-Jun-2022 21:44:28 UTC] PHP Notice:  require(): Read of 599305 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[26-Jun-2022 21:44:28 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_static.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php:31
+Stack trace:
+#0 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/autoload.php(12): ComposerAutoloaderInitd97f268578801852b3a91861557b3693::getLoader()
+#1 /home/yuuriaoyhosting/public_html/tstore.com.vn/public/index.php(34): require('/home/yuuriaoyh...')
+#2 {main}
+  thrown in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[26-Jun-2022 21:45:17 UTC] PHP Notice:  require(): Read of 587017 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[26-Jun-2022 21:45:17 UTC] PHP Notice:  require(): Read of 587017 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[26-Jun-2022 21:45:17 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_static.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php:31
+Stack trace:
+#0 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/autoload.php(12): ComposerAutoloaderInitd97f268578801852b3a91861557b3693::getLoader()
+#1 /home/yuuriaoyhosting/public_html/tstore.com.vn/public/index.php(34): require('/home/yuuriaoyh...')
+#2 {main}
+  thrown in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[26-Jun-2022 23:15:38 UTC] PHP Notice:  require(): Read of 611593 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[26-Jun-2022 23:15:38 UTC] PHP Notice:  require(): Read of 611593 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[26-Jun-2022 23:15:38 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_static.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php:31
+Stack trace:
+#0 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/autoload.php(12): ComposerAutoloaderInitd97f268578801852b3a91861557b3693::getLoader()
+#1 /home/yuuriaoyhosting/public_html/tstore.com.vn/public/index.php(34): require('/home/yuuriaoyh...')
+#2 {main}
+  thrown in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[27-Jun-2022 01:25:41 UTC] PHP Notice:  require(): Read of 574729 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[27-Jun-2022 01:25:41 UTC] PHP Notice:  require(): Read of 574729 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[27-Jun-2022 01:25:41 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_static.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/p[27-Jun-2022 01:28:14 UTC] PHP Notice:  require(): Read of 562441 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[27-Jun-2022 01:28:14 UTC] PHP Notice:  require(): Read of 562441 bytes failed with errno=14 Bad address in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
+[27-Jun-2022 01:28:14 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_static.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php:31
+Stack trace:
+#0 /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/autoload.php(12): ComposerAutoloaderInitd97f268578801852b3a91861557b3693::getLoader()
+#1 /home/yuuriaoyhosting/public_html/tstore.com.vn/public/index.php(34): require('/home/yuuriaoyh...')
+#2 {main}
+  thrown in /home/yuuriaoyhosting/public_html/tstore.com.vn/vendor/composer/autoload_real.php on line 31
